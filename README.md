@@ -1,16 +1,16 @@
-#🛡️ Analizador de Tráfico de Red
+# 🛡️ Analizador de Tráfico de Red
 
 🔍 Visualiza en tiempo real los paquetes de red capturados con Python y una interfaz web moderna.
 
 ---
 
-#📌 Descripción
+# 📌 Descripción
 
 El Analizador de Tráfico de Red es una herramienta que captura paquetes de red utilizando Python y Scapy, mostrando la información en una interfaz web interactiva desarrollada con HTML, Tailwind CSS y JavaScript.
 
 ---
 
-#Características principales:
+# Características principales:
 
 - ✅ Captura de paquetes en tiempo real (IP, protocolo, puertos, direcciones MAC)
   
@@ -24,7 +24,7 @@ El Analizador de Tráfico de Red es una herramienta que captura paquetes de red 
 
 ---
 
-#🚀 Requisitos
+# 🚀 Requisitos
 
 #Asegúrate de cumplir con los siguientes requisitos antes de ejecutar el script:
 
@@ -35,7 +35,7 @@ El Analizador de Tráfico de Red es una herramienta que captura paquetes de red 
 ```bash
 pip install scapy
 ```
-#🔧 Instalación y Uso
+# 🔧 Instalación y Uso
 
 - 1️⃣ Clona este repositorio:
 ```bash
@@ -54,9 +54,9 @@ python app.py
 
 - 📌 El programa analizará los paquetes de red y mostrará la información en la interfaz web.
 
-#🏗️ Estructura del Código
+# 🏗️ Estructura del Código
 
-##El código está dividido en dos partes principales:
+## El código está dividido en dos partes principales:
 
 - analyzer.py (Captura de paquetes)
 
