@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analizador de Tráfico de Red</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@shadcn/ui@latest/dist/shadcn-ui.min.css" rel="stylesheet">
+    <style>
+        /* Animaciones personalizadas */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .fade-in {
+            animation: fadeIn 0.8s ease-out;
+        }
+        .hover-scale:hover {
+            transform: scale(1.02);
+            transition: transform 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-gray-900 to-gray-800 min-h-screen text-white">
+    <div class="container mx-auto p-6">
+        <!-- Header -->
+        <header class="text-center mb-12 fade-in">
+            <h1 class="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
+                Analizador de Tráfico de Red
+            </h1>
+            <p class="mt-4 text-gray-300">Visualización en tiempo real de paquetes de red capturados.</p>
+        </header>
+
+        <!-- Tabla de Paquetes -->
+        <div class="bg-white/10 backdrop-blur-md rounded-xl shadow-2xl p-6 hover-scale fade-in">
+            <h2 class="text-2xl font-semibold mb-6">Paquetes Capturados</h2>
+            <div class="overflow-x-auto">
+                <table class="w-full text-left rounded-lg overflow-hidden">
+                    <thead class="bg-gradient-to-r from-blue-500 to-purple-600">
+                        <tr>
+                            <th class="p-4">IP Origen</th>
+                            <th class="p-4">IP Destino</th>
+                            <th class="p-4">Protocolo</th>
+                            <th class="p-4">Puerto Origen</th>
+                            <th class="p-4">Puerto Destino</th>
+                            <th class="p-4">MAC Origen</th>
+                            <th class="p-4">MAC Destino</th>
+                        </tr>
+                    </thead>
+                    <tbody id="packets-table-body" class="bg-white/10">
+                        <!-- Los datos se insertarán aquí mediante JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="mt-12 text-center fade-in">
+        <p class="text-sm text-gray-400">Desarrollado por <span class="font-bold text-blue-400">JoelDavid</span></p>
+        <div class="flex justify-center space-x-4 mt-2">
+            <a href="https://www.linkedin.com/in/tu-linkedin" target="_blank" class="text-blue-400 hover:text-blue-300 transition-colors">
+                LinkedIn
+            </a>
+            <a href="https://github.com/tu-github" target="_blank" class="text-blue-400 hover:text-blue-300 transition-colors">
+                GitHub
+            </a>
+        </div>
+    </footer>
+
+   <script src="./script.js"></script>
+</body>
+</html>
